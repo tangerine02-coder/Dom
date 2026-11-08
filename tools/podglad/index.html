@@ -31,7 +31,7 @@ for (const p of data.parts) {
 }
 scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8a7a, 1.6));
 const sun = new THREE.DirectionalLight(0xffffff, 1.6);
-sun.position.set(-900,-1400,1800); sun.target.position.set(533,414,0); scene.add(sun.target);
+sun.position.set(...JSON.parse(q.get('sun')||'[-900,-1400,1800]')); sun.target.position.set(533,414,0); scene.add(sun.target);
 sun.castShadow = true; sun.shadow.mapSize.set(4096,4096);
 Object.assign(sun.shadow.camera,{left:-1200,right:1200,top:1200,bottom:-1200,near:100,far:6000});
 sun.shadow.bias = -0.0005;

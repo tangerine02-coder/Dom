@@ -4,6 +4,8 @@ Model 3D domu jednorodzinnego **„Smart comfort+” (SENDOM Domy Drewniane, pro
 zbudowany na podstawie rysunków: rzutu parteru i poddasza, rzutu dachu, przekrojów A-A i B-B,
 elewacji oraz zestawienia stolarki.
 
+> Osobny model **garażu (części gospodarczo-garażowej)** jest w folderze [`garaz/`](garaz/README.md).
+
 ![Widok od frontu](podglad/widok_front_antracyt.png)
 
 | Ogród – antracyt | Front – brąz (Nordika / orzech) |
@@ -133,9 +135,9 @@ To model poglądowy. Nie zastępuje projektu wykonawczego.
 `tools/` pozwala sprawdzić skrypt bez SketchUpa:
 
 * `tools/sketchup_mock.rb` – atrapa Ruby API SketchUpa (tylko potrzebne fragmenty),
-* `tools/run_mock.rb` – uruchamia skrypt na atrapie i zapisuje geometrię do JSON,
+* `tools/run_mock.rb` – uruchamia wybrany skrypt (dom albo garaż) na atrapie i zapisuje geometrię do JSON,
 * `tools/export_model.py` – sprawdza, czy każda bryła jest zamknięta i ma ściany skierowane na
   zewnątrz, i zapisuje pliki `.dae`,
 * `tools/export_inne.py` – zapisuje te same modele jako `.glb` oraz `.obj` + `.mtl`,
-* `tools/build.sh` – robi wszystko powyższe dla obu wariantów (`pip install mapbox_earcut numpy`),
+* `tools/build.sh` – robi wszystko powyższe dla domu i garażu, w obu wariantach (`pip install mapbox_earcut numpy`),
 * `tools/podglad/` – podgląd w three.js i skrypt renderujący obrazy z katalogu `podglad/`.

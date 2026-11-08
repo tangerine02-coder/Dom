@@ -1,0 +1,102 @@
+newmtl Tynk_silikonowy_biały
+Kd 0.9529 0.9529 0.9373
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Tynk_mozaikowy_grafitowy
+Kd 0.2902 0.3020 0.3137
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Blacha_RAL_9005
+Kd 0.1098 0.1098 0.1176
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Blachodachówka_modułowa_RAL_9005
+Kd 0.1333 0.1333 0.1451
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Okno_dachowe_–_rama
+Kd 0.2196 0.2431 0.2588
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Stolarka_RAL_7016
+Kd 0.2196 0.2431 0.2588
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Deska_elewacyjna_RAL_7016
+Kd 0.2510 0.2745 0.2980
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Szkło
+Kd 0.5882 0.7255 0.8039
+Ka 0 0 0
+d 0.350
+illum 1
+
+newmtl Beton
+Kd 0.6471 0.6471 0.6275
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Płytki_gresowe
+Kd 0.6196 0.6039 0.5725
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Deski_podłogowe
+Kd 0.7686 0.6275 0.4314
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Płyta_g-k_biała
+Kd 0.9725 0.9725 0.9647
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Ściany_wewnętrzne
+Kd 0.9647 0.9608 0.9451
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Drzwi_wewnętrzne
+Kd 0.9255 0.9255 0.9098
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Stal_nierdzewna
+Kd 0.6902 0.6980 0.7059
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Kostka_betonowa
+Kd 0.5490 0.5490 0.5333
+Ka 0 0 0
+d 1.000
+illum 1
+
+newmtl Trawnik
+Kd 0.4863 0.6275 0.3451
+Ka 0 0 0
+d 1.000
+illum 1
+
