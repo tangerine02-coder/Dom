@@ -21,6 +21,8 @@ elewacji oraz zestawienia stolarki.
 | `sketchup/dom_smart_comfort.rb` | **Główny plik.** Skrypt, który buduje cały model w SketchUpie (natywne grupy, komponenty, tagi, materiały, sceny). |
 | `sketchup/dom_smart_comfort_antracyt.dae` | Gotowy model do importu (COLLADA), wariant antracytowy. |
 | `sketchup/dom_smart_comfort_braz.dae` | To samo w wariancie brązowym (deska 1806 Nordika, stolarka orzech). |
+| `inne_programy/*.glb` | Model w formacie glTF dla innych darmowych programów (Blender, przeglądarki 3D online). |
+| `inne_programy/*.obj` + `.mtl` | Model w formacie OBJ (FreeCAD, Sweet Home 3D, Blender i inne). Plik `.mtl` z kolorami musi leżeć obok `.obj`. |
 | `podglad/` | Rendery podglądowe. |
 | `tools/` | Narzędzia do testowania skryptu poza SketchUpem (opis niżej). |
 
@@ -50,6 +52,18 @@ SketchUp Make 2017. Darmowa wersja przeglądarkowa (SketchUp Free) nie ma konsol
 W opcjach importu zaznacz **„Scal współpłaszczyznowe ściany”** (*Merge coplanar faces*).
 Import .dae działa w SketchUp Pro i Make 2017; w wersji webowej tylko w płatnym planie (np. SketchUp Go) – darmowa SketchUp Free importuje wyłącznie .skp, .jpg i .png.
 Model z .dae to sama geometria z kolorami. Komponenty, tagi i sceny daje tylko sposób 1.
+
+## Bez SketchUpa – inne darmowe programy (także na Linuksie)
+
+* **Tylko obejrzeć**: przeglądarka 3D online, np. [3dviewer.net](https://3dviewer.net). Przeciągnij na stronę
+  plik `inne_programy/dom_smart_comfort_antracyt.glb`.
+* **Oglądać i edytować**: [Blender](https://www.blender.org) (darmowy, Windows/macOS/Linux):
+  *File → Import → glTF 2.0 (.glb/.gltf)* i wybierz plik `.glb`. Model ma prawdziwe wymiary w metrach.
+* **Program CAD**: [FreeCAD](https://www.freecad.org): *Plik → Importuj* i wybierz plik `.obj`.
+* **Projektowanie wnętrz**: [Sweet Home 3D](https://www.sweethome3d.com): *Meble → Importuj mebel*
+  i wybierz plik `.obj` (bryła domu wczyta się jako jeden obiekt).
+
+W tych formatach są geometria, kolory i nazwy elementów (ściany, dach, okna…), ale bez tagów i scen SketchUpa.
 
 ## Co jest w modelu
 
@@ -122,5 +136,6 @@ To model poglądowy. Nie zastępuje projektu wykonawczego.
 * `tools/run_mock.rb` – uruchamia skrypt na atrapie i zapisuje geometrię do JSON,
 * `tools/export_model.py` – sprawdza, czy każda bryła jest zamknięta i ma ściany skierowane na
   zewnątrz, i zapisuje pliki `.dae`,
+* `tools/export_inne.py` – zapisuje te same modele jako `.glb` oraz `.obj` + `.mtl`,
 * `tools/build.sh` – robi wszystko powyższe dla obu wariantów (`pip install mapbox_earcut numpy`),
 * `tools/podglad/` – podgląd w three.js i skrypt renderujący obrazy z katalogu `podglad/`.
