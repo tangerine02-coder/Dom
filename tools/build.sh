@@ -23,3 +23,12 @@ mkdir -p perkusja/inne_programy
 ruby tools/run_mock.rb perkusja/sketchup/perkusja.rb build/perkusja_model.json
 python3 tools/export_model.py build/perkusja_model.json perkusja/sketchup/perkusja.dae build/perkusja_mesh.json
 python3 tools/export_inne.py build/perkusja_mesh.json perkusja/inne_programy/perkusja
+
+# teren działki (z rzędnych PZT) i model zbiorczy: dom + garaż + teren
+mkdir -p teren/sketchup teren/inne_programy
+python3 tools/teren_generuj.py
+ruby tools/run_mock.rb teren/sketchup/teren.rb build/teren_model.json
+python3 tools/export_model.py build/teren_model.json teren/sketchup/teren.dae build/teren_mesh.json
+python3 tools/export_inne.py build/teren_mesh.json teren/inne_programy/teren
+python3 tools/zestaw.py antracyt
+python3 tools/zestaw.py braz

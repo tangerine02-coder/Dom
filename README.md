@@ -5,7 +5,8 @@ zbudowany na podstawie rysunków: rzutu parteru i poddasza, rzutu dachu, przekro
 elewacji oraz zestawienia stolarki.
 
 > Osobny model **garażu (części gospodarczo-garażowej)** jest w folderze [`garaz/`](garaz/README.md),
-> a model **perkusji Mapex Mars** do wstawienia w dom – w folderze [`perkusja/`](perkusja/README.md).
+> model **perkusji Mapex Mars** do wstawienia w dom – w folderze [`perkusja/`](perkusja/README.md),
+> a **teren działki** z rzędnych z PZT (oraz dom + garaż + teren w jednym pliku) – w folderze [`teren/`](teren/README.md).
 
 ![Widok od frontu](podglad/widok_front_antracyt.png)
 

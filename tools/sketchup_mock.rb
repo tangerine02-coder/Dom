@@ -178,11 +178,12 @@ module Sketchup
       Geom::Vector3d.new(*n)
     end
 
-    def normal; Face.newell(@outer).normalize; end
+    def normal; @normal ||= Face.newell(@outer).normalize; end
 
     def reverse!
       @outer = @outer.reverse
       @holes = @holes.map(&:reverse)
+      @normal = nil
       Sketchup::STATS[:reversed] += 1
       self
     end
@@ -247,6 +248,11 @@ module Sketchup
     end
 
     def add_line(*_a); nil; end
+  end
+
+  class Edge < Drawingelement
+    attr_accessor :soft, :smooth
+    def faces; []; end
   end
 
   class Group < Drawingelement

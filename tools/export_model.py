@@ -77,7 +77,7 @@ def main(src, dae_path, mesh_path):
     open_ok = ('Szyba', 'Teren')
     checked = 0
     for path, tris in groups.items():
-        if any(path.endswith(s) for s in open_ok):
+        if any(path.endswith(s) for s in open_ok) or any(c.startswith('Teren') for c in path.split(' / ')):
             continue
         key = lambda p: tuple(round(c, 3) for c in p)
         edges = defaultdict(int)

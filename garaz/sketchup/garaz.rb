@@ -29,10 +29,13 @@ module Garaz
   @teren   = true   # trawnik wokół budynku
   @wnetrza = true   # posadzka, strop, ściany działowe, drzwi wewnętrzne
   @sceny   = true   # gotowe sceny: widoki 3D, elewacje, rzuty
+  # położenie garażu w modelu [x, y] w cm; [1066.5, 0] – przy prawej ścianie
+  # szczytowej domu „Smart comfort+” (gdy wczytujesz garaż do modelu domu)
+  @pozycja = [0.0, 0.0]
   # ==========================================================================
 
   class << self
-    attr_accessor :wariant, :teren, :wnetrza, :sceny
+    attr_accessor :wariant, :teren, :wnetrza, :sceny, :pozycja
 
     # ------------------------------------------------------------------------
     #  GŁÓWNA PROCEDURA
@@ -49,6 +52,7 @@ module Garaz
         tagi!
         root = model.active_entities.add_group
         root.name = 'Garaż – część gospodarczo-garażowa'
+        root.transformation = Geom::Transformation.new(p3([@pozycja[0], @pozycja[1], 0]))
         @root = root.entities
 
         teren! if @teren
