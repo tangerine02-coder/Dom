@@ -4,7 +4,8 @@ Model 3D domu jednorodzinnego **„Smart comfort+” (SENDOM Domy Drewniane, pro
 zbudowany na podstawie rysunków: rzutu parteru i poddasza, rzutu dachu, przekrojów A-A i B-B,
 elewacji oraz zestawienia stolarki.
 
-> Osobny model **garażu (części gospodarczo-garażowej)** jest w folderze [`garaz/`](garaz/README.md).
+> Osobny model **garażu (części gospodarczo-garażowej)** jest w folderze [`garaz/`](garaz/README.md),
+> a model **perkusji Mapex Mars** do wstawienia w dom – w folderze [`perkusja/`](perkusja/README.md).
 
 ![Widok od frontu](podglad/widok_front_antracyt.png)
 

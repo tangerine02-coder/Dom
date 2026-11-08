@@ -17,3 +17,9 @@ for w in antracyt braz; do
   python3 tools/export_model.py "build/garaz_model_$w.json" "garaz/sketchup/garaz_$w.dae" "build/garaz_mesh_$w.json"
   python3 tools/export_inne.py "build/garaz_mesh_$w.json" "garaz/inne_programy/garaz_$w"
 done
+
+# perkusja Mapex Mars MA529SF
+mkdir -p perkusja/inne_programy
+ruby tools/run_mock.rb perkusja/sketchup/perkusja.rb build/perkusja_model.json
+python3 tools/export_model.py build/perkusja_model.json perkusja/sketchup/perkusja.dae build/perkusja_mesh.json
+python3 tools/export_inne.py build/perkusja_mesh.json perkusja/inne_programy/perkusja
