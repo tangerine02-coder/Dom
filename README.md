@@ -28,7 +28,7 @@ elewacji oraz zestawienia stolarki.
 
 ### Sposób 1 – skrypt Ruby (zalecany)
 
-Wymaga **desktopowego** SketchUpa: Pro, 30-dniowej wersji próbnej Pro albo starego darmowego
+Wymaga **desktopowego** SketchUpa: Pro, 7-dniowej wersji próbnej Pro albo starego darmowego
 SketchUp Make 2017. Darmowa wersja przeglądarkowa (SketchUp Free) nie ma konsoli Ruby.
 
 1. Pobierz plik `sketchup/dom_smart_comfort.rb`.
@@ -48,7 +48,7 @@ SketchUp Make 2017. Darmowa wersja przeglądarkowa (SketchUp Free) nie ma konsol
 
 **Plik → Importuj** (*File → Import*) → typ *COLLADA (\*.dae)* → wybierz plik `.dae`.
 W opcjach importu zaznacz **„Scal współpłaszczyznowe ściany”** (*Merge coplanar faces*).
-Import .dae działa w SketchUp Pro i Make 2017; darmowa wersja webowa importuje tylko .skp, .jpg i .png.
+Import .dae działa w SketchUp Pro i Make 2017; w wersji webowej tylko w płatnym planie (np. SketchUp Go) – darmowa SketchUp Free importuje wyłącznie .skp, .jpg i .png.
 Model z .dae to sama geometria z kolorami. Komponenty, tagi i sceny daje tylko sposób 1.
 
 ## Co jest w modelu
